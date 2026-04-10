@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
  
 h1 {
   font-size: 400%;
-  color: oklch(from var(--color-accent) 30% 50% h);
+  color: oklch(from var(--color-accent) 30% 40% h);
 }
 
 nav ul,
