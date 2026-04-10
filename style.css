@@ -1,6 +1,52 @@
+:root {
+  --color-accent: oklch(68.279% 0.13999 350.109);
+}
+
+html {
+  accent-color: var(--color-accent);
+}
+
 body {
   /* Set line height to 1.5 times the font size
 	   and use the OS’s UI font as the website font
 	 */
   font: 100%/1.5 system-ui;
+  max-width: 100ch;
+  margin-inline: max(1em, (100%-100ch)/2);
+  padding: 2em;
+}
+
+nav ul,
+nav li {
+  display: contents;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(80% 3% 200);
+}
+
+nav a.current {
+  border-bottom-width: 0.4em;
+  border-bottom-color: oklch(80.621% 0.00226 199.35);
+  padding-bottom: 0.1em;
+}
+
+nav a:hover{
+  border-bottom-width: 0.4em;
+  border-bottom-color: var(--color-accent);
+  border-bottom-style: solid;
+  padding-bottom: 0.1em;
+  background-color: oklch(from var(--color-accent) 95% 5% h);
 }
