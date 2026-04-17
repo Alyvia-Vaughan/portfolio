@@ -1,5 +1,6 @@
 :root {
   --color-accent: oklch(68.279% 0.13999 350.109);
+  color-scheme: light dark;
 }
 
 html {
@@ -44,7 +45,7 @@ nav a {
   margin-bottom: 1em;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  border-bottom-color: oklch(50% 10% 200 / 40%);
 }
 
 nav a.current {
@@ -58,7 +59,7 @@ nav a:hover{
   border-bottom-color: var(--color-accent);
   border-bottom-style: solid;
   padding-bottom: 0.1em;
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 input,
@@ -163,4 +164,15 @@ ul.skills li {
 
 .resume-header p {
   margin: 0;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 80%;
+}
+
+.color-scheme select {
+  font: inherit;
 }
