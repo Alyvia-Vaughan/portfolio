@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Tastes Like Data: Baked Goods Classifier",
+        "year": 2025,
+        "image": "../images/baked_goods_classifier_proj_img.png",
+        "description": "By Alyvia Vaughan and Katie Hannigan. A machine learning project analyzing 83,782 recipes from Food.com to classify baked goods using nutritional data. Features exploratory data analysis, statistical inference, and Random Forest modeling with 82.4% accuracy."
+    },
+    {
+        "title": "Prices Vary More By Store Than By Processing Level",
+        "year": 2026,
+        "image": "../images/dsc106_project_1.png",
+        "description": "An expository data visualization comparing food prices across NOVA processing levels at Walmart and Whole Foods. Used median and IQR to show that store choice impacts price far more than processing level."
+    },
+    {
+        "title": "Odio aperiam autem eos.",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Possimus voluptatibus repellendus mollitia similique, rerum est illum sit, sed aliquam molestiae accusamus eligendi aut, earum aliquid architecto?"
+    },
+    {
+        "title": "Ratione numquam culpa aliquid?",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Animi, similique aliquam possimus reiciendis nisi placeat assumenda. A ratione, labore pariatur inventore ad est quo, atque officia dolore."
+    },
+    {
+        "title": "Error laboriosam quae esse?",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Facilis vero impedit nesciunt deserunt quibusdam, iure nihil eius delectus voluptatum necessitatibus doloribus quod culpa minima commodi."
+    },
+    {
+        "title": "Veniam ad nisi laborum.",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Fuga, alias sit debitis asperiores veniam pariatur sapiente deleniti, labore cupiditate fugiat temporibus impedit natus obcaecati soluta."
+    },
+    {
+        "title": "Minus numquam itaque modi.",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Nobis, eum numquam accusamus placeat veniam nemo blanditiis fugit nostrum quos perspiciatis iste necessitatibus, harum ratione quia."
+    },
+    {
+        "title": "Ducimus, explicabo. Rerum, libero?",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Sit laborum magni iusto soluta ducimus aut, odit ab impedit accusantium voluptates? Reiciendis praesentium sed rem excepturi consequatur."
+    },
+    {
+        "title": "Fugit blanditiis obcaecati ut.",
+        "year": 2023,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Officiis fuga quos, enim quasi odit ab consequuntur, iusto iure necessitatibus saepe placeat quo vel doloremque ex."
+    },
+    {
+        "title": "Possimus a quae nostrum.",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Dicta nisi voluptates architecto blanditiis eaque itaque corrupti deleniti quas quia quasi perferendis, voluptatibus deserunt."
+    },
+    {
+        "title": "Molestias at quibusdam earum.",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Doloribus provident quia perferendis laborum neque maiores! Corrupti obcaecati voluptates consectetur a modi quo officiis aliquam hic."
+    },
+    {
+        "title": "Laboriosam amet harum explicabo.",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Fugiat ut commodi perspiciatis, dolores alias laborum, beatae harum mollitia consectetur at a sed laboriosam similique, esse expedita."
+    }
+]

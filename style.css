@@ -176,3 +176,18 @@ ul.skills li {
 .color-scheme select {
   font: inherit;
 }
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-weight: bold;
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  margin: 0;
+}
