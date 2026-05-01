@@ -18,3 +18,16 @@ let arc = arcGenerator({ startAngle: 0, endAngle: 2 * Math.PI });
 
 d3.select('svg').append('path').attr('d', arc).attr('fill', 'red');
 
+let data = [1, 2, 3, 4, 5, 5];
+let sliceGenerator = d3.pie();
+let arcData = sliceGenerator(data);
+let arcs = arcData.map(d => arcGenerator(d));
+let colors = d3.scaleOrdinal(d3.schemeTableau10);
+
+arcs.forEach((arc, idx) => {
+  d3.select('svg')
+    .append('path')
+    .attr('d', arc)
+    .attr('fill', colors(idx));
+});
+
