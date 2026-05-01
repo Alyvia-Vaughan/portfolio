@@ -191,3 +191,9 @@ ul.skills li {
   grid-row: 2;
   margin: 0;
 }
+
+.project-year {
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  color: gray;
+}
