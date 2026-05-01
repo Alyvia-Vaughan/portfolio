@@ -12,10 +12,10 @@
         "description": "An expository data visualization comparing food prices across NOVA processing levels at Walmart and Whole Foods. Used median and IQR to show that store choice impacts price far more than processing level."
     },
     {
-        "title": "Odio aperiam autem eos.",
-        "year": 2024,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Possimus voluptatibus repellendus mollitia similique, rerum est illum sit, sed aliquam molestiae accusamus eligendi aut, earum aliquid architecto?"
+        "title": "Persuasive or Deceptive Visualization: Abortion-access burdens are geographically unequal",
+        "year": 2026,
+        "image": "../images/for_viz.png",
+        "description": "A data visualization website that explores abortion access across the United States through two contrasting narrative perspectives, allowing users to compare how the same data can support different arguments. It combines geographic mapping, policy context, and user-driven storytelling to highlight how visualization framing shapes public understanding of reproductive rights."
     },
     {
         "title": "Ratione numquam culpa aliquid?",
