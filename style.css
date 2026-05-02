@@ -202,6 +202,17 @@ ul.skills li {
   max-width: 20em;
   margin-block: 2em;
   overflow: visible;
+  
+  path {
+    transition: 300ms;
+    cursor: pointer;
+  }
+
+  &:has(path:hover) {
+    path:not(:hover) {
+      opacity: 0.5;
+    }
+  }
 }
 
 .legend {
@@ -232,3 +243,11 @@ ul.skills li {
   gap: 2em;
 }
 .legend { flex: 1; }
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
