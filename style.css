@@ -277,3 +277,11 @@ dl.stats dd {
   font-weight: 370;
   line-height: 1.1;
 }
+
+.gridlines line {
+  stroke: oklch(50% 5% 250 / 20%);
+}
+
+.gridlines path {
+  display: none;
+}
