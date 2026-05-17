@@ -20,7 +20,7 @@
     {
         "title": "Bikewatching: Boston Bike Traffic Visualization",
         "year": 2026,
-        "image": "https://alyvia-vaughan.github.io/bikewatching/images/preview.png",
+        "image": "../images/preview.png",
         "description": "An interactive geospatial visualization of BlueBike station traffic in the Boston area using Mapbox and D3. Features bike lane overlays, traffic volume circles, time-of-day filtering, and color-coded flow direction.",
         "url": "https://alyvia-vaughan.github.io/bikewatching/"
     },
