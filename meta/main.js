@@ -45,20 +45,20 @@ function renderCommitInfo(data, commits) {
   const dl = d3.select('#stats').append('dl').attr('class', 'stats');
 
   dl.append('dt').html('Total <abbr title="Lines of code">LOC</abbr>');
-  dl.append('dd').text(data.length);
+  dl.append('dd').attr('id', 'stat-loc').text(data.length);
 
   dl.append('dt').text('Total commits');
-  dl.append('dd').text(commits.length);
+  dl.append('dd').attr('id', 'stat-commits').text(commits.length); 
 
   dl.append('dt').text('Number of files');
-  dl.append('dd').text(d3.group(data, (d) => d.file).size);
+  dl.append('dd').attr('id', 'stat-files').text(d3.group(data, (d) => d.file).size); 
 
   const fileLengths = d3.rollups(data, (v) => d3.max(v, (v) => v.line), (d) => d.file);
   dl.append('dt').text('Avg file length (lines)');
-  dl.append('dd').text(Math.round(d3.mean(fileLengths, (d) => d[1])));
+  dl.append('dd').attr('id', 'stat-avg-file').text(Math.round(d3.mean(fileLengths, (d) => d[1])));
 
   dl.append('dt').text('Avg line length (chars)');
-  dl.append('dd').text(Math.round(d3.mean(data, (d) => d.length)));
+  dl.append('dd').attr('id', 'stat-avg-line').text(Math.round(d3.mean(data, (d) => d.length)));
 
   const workByPeriod = d3.rollups(
     data,
@@ -67,7 +67,8 @@ function renderCommitInfo(data, commits) {
   );
   const maxPeriod = d3.greatest(workByPeriod, (d) => d[1])?.[0];
   dl.append('dt').text('Most active time of day');
-  dl.append('dd').text(maxPeriod);
+  dl.append('dd').attr('id', 'stat-period').text(maxPeriod);
+
 }
 
 function renderTooltipContent(commit) {
@@ -271,6 +272,7 @@ function onTimeSliderChange() {
 
   filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
   updateScatterPlot(data, filteredCommits);
+  updateCommitInfo(data, filteredCommits);
   updateFileDisplay(filteredCommits);
 }
 
@@ -327,4 +329,54 @@ function updateScatterPlot(data, commits) {
       d3.select(event.currentTarget).style('fill-opacity', 0.7);
       updateTooltipVisibility(false);
     });
+}
+
+function updateCommitInfo(data, commits) {
+  const lines = commits.flatMap((d) => d.lines);
+  
+  const fileLengths = d3.rollups(lines, (v) => d3.max(v, (v) => v.line), (d) => d.file);
+  
+  const workByPeriod = d3.rollups(
+    lines,
+    (v) => v.length,
+    (d) => new Date(d.datetime).toLocaleString('en', { dayPeriod: 'short' }),
+  );
+  const maxPeriod = d3.greatest(workByPeriod, (d) => d[1])?.[0];
+
+  d3.select('#stat-loc').text(lines.length);
+  d3.select('#stat-commits').text(commits.length);
+  d3.select('#stat-files').text(d3.group(lines, (d) => d.file).size);
+  d3.select('#stat-avg-file').text(Math.round(d3.mean(fileLengths, (d) => d[1])));
+  d3.select('#stat-avg-line').text(Math.round(d3.mean(lines, (d) => d.length)));
+  d3.select('#stat-period').text(maxPeriod);
+}
+
+function updateFileDisplay(filteredCommits) {
+  let lines = filteredCommits.flatMap((d) => d.lines);
+  let files = d3
+    .groups(lines, (d) => d.file)
+    .map(([name, lines]) => ({ name, lines }))
+    .sort((a, b) => b.lines.length - a.lines.length); // Step 2.3 sort included here
+
+  let filesContainer = d3
+    .select('#files')
+    .selectAll('div')
+    .data(files, (d) => d.name)
+    .join((enter) =>
+      enter.append('div').call((div) => {
+        div.append('dt').append('code');
+        div.append('dd');
+      })
+    );
+
+  filesContainer.select('dt > code').html(
+    (d) => `${d.name}<small style="display:block; font-size: 0.75em; opacity: 0.6">${d.lines.length} lines</small>`
+  );
+  
+  filesContainer
+    .select('dd')
+    .selectAll('div')
+    .data((d) => d.lines)
+    .join('div')
+    .attr('class', 'loc');
 }
