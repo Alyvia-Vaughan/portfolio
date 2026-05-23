@@ -320,7 +320,7 @@ dl.info dd {
 }
 
 circle {
-  transition: all 200ms, r calc(var(--r) * 100ms);
+  transition: all 200ms;
   transform-origin: center;
   transform-box: fill-box;
 
