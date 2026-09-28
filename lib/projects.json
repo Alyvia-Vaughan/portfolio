@@ -3,19 +3,43 @@
         "title": "Tastes Like Data: Baked Goods Classifier",
         "year": 2025,
         "image": "../images/baked_goods_classifier_proj_img.png",
-        "description": "By Alyvia Vaughan and Katie Hannigan. A machine learning project analyzing 83,782 recipes from Food.com to classify baked goods using nutritional data. Features exploratory data analysis, statistical inference, and Random Forest modeling with 82.4% accuracy."
+        "description": "By Alyvia Vaughan and Katie Hannigan. A machine learning project analyzing 83,782 recipes from Food.com to classify baked goods using nutritional data. Features exploratory data analysis, statistical inference, and Random Forest modeling with 82.4% accuracy.",
+        "url": "https://github.com/katiehanni/baked-goods-classifier"
+    },
+    {
+        "title": "Relationship Between Character Departures and Ratings in TV Shows",
+        "year": 2026,
+        "image": "../images/cogs108proj.png",
+        "description": "A data analysis project exploring the relationship between character departures and ratings in TV shows. Utilized data cleaning, visualization, and statistical modeling to analyze trends and correlations.",
+        "url": "https://github.com/Alyvia-Vaughan/character-departures/blob/main/COGS108_finalproject.pdf"
+    },
+    {
+        "title": "Who Wins When Markets Break?",
+        "year": 2026,
+        "image": "../images/finance_viz_proj.png",
+        "description": "An educational website of interactive visualizations exploring how different 'old money' and 'new money' assets perform during major market crises throughout the 21st century.",
+        "url": "https://alexa45394.github.io/finance-episodes/"
+    },
+    {
+        "title": "Rising Seas: Coastal Sea Level Projections from 2024 to 2100",
+        "year": 2026,
+        "image": "../images/risingseas_vis.png",
+        "description": "An interactive visualization exploring how much sea levels are projected to rise by 2100 and how the impact varies across coastal regions.",
+        "url": "https://alexa45394.github.io/extreme-heart-interactive-vis/"
     },
     {
         "title": "Prices Vary More By Store Than By Processing Level",
         "year": 2026,
         "image": "../images/dsc106_project_1.png",
-        "description": "An expository data visualization comparing food prices across NOVA processing levels at Walmart and Whole Foods. Used median and IQR to show that store choice impacts price far more than processing level."
+        "description": "An expository data visualization comparing food prices across NOVA processing levels at Walmart and Whole Foods. Used median and IQR to show that store choice impacts price far more than processing level.",
+        "url": "https://github.com/Alyvia-Vaughan/dsc106-visualization-projects/blob/main/final_viz.png"
     },
     {
         "title": "Persuasive or Deceptive Visualization: Abortion-access burdens are geographically unequal",
         "year": 2026,
         "image": "../images/for_viz.png",
-        "description": "A data visualization website that explores abortion access across the United States through two contrasting narrative perspectives, allowing users to compare how the same data can support different arguments. It combines geographic mapping, policy context, and user-driven storytelling to highlight how visualization framing shapes public understanding of reproductive rights."
+        "description": "A data visualization website that explores abortion access across the United States through two contrasting narrative perspectives, allowing users to compare how the same data can support different arguments. It combines geographic mapping, policy context, and user-driven storytelling to highlight how visualization framing shapes public understanding of reproductive rights.",
+        "url": "https://alexa45394.github.io/abortion-access-dual-views-visualizations/"
     },
     {
         "title": "Bikewatching: Boston Bike Traffic Visualization",
@@ -23,53 +47,5 @@
         "image": "../images/preview.png",
         "description": "An interactive geospatial visualization of BlueBike station traffic in the Boston area using Mapbox and D3. Features bike lane overlays, traffic volume circles, time-of-day filtering, and color-coded flow direction.",
         "url": "https://alyvia-vaughan.github.io/bikewatching/"
-    },
-    {
-        "title": "Error laboriosam quae esse?",
-        "year": 2023,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Facilis vero impedit nesciunt deserunt quibusdam, iure nihil eius delectus voluptatum necessitatibus doloribus quod culpa minima commodi."
-    },
-    {
-        "title": "Veniam ad nisi laborum.",
-        "year": 2023,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Fuga, alias sit debitis asperiores veniam pariatur sapiente deleniti, labore cupiditate fugiat temporibus impedit natus obcaecati soluta."
-    },
-    {
-        "title": "Minus numquam itaque modi.",
-        "year": 2024,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nobis, eum numquam accusamus placeat veniam nemo blanditiis fugit nostrum quos perspiciatis iste necessitatibus, harum ratione quia."
-    },
-    {
-        "title": "Ducimus, explicabo. Rerum, libero?",
-        "year": 2025,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sit laborum magni iusto soluta ducimus aut, odit ab impedit accusantium voluptates? Reiciendis praesentium sed rem excepturi consequatur."
-    },
-    {
-        "title": "Fugit blanditiis obcaecati ut.",
-        "year": 2023,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Officiis fuga quos, enim quasi odit ab consequuntur, iusto iure necessitatibus saepe placeat quo vel doloremque ex."
-    },
-    {
-        "title": "Possimus a quae nostrum.",
-        "year": 2024,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Dicta nisi voluptates architecto blanditiis eaque itaque corrupti deleniti quas quia quasi perferendis, voluptatibus deserunt."
-    },
-    {
-        "title": "Molestias at quibusdam earum.",
-        "year": 2025,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Doloribus provident quia perferendis laborum neque maiores! Corrupti obcaecati voluptates consectetur a modi quo officiis aliquam hic."
-    },
-    {
-        "title": "Laboriosam amet harum explicabo.",
-        "year": 2026,
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Fugiat ut commodi perspiciatis, dolores alias laborum, beatae harum mollitia consectetur at a sed laboriosam similique, esse expedita."
     }
 ]
